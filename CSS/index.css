@@ -450,10 +450,23 @@ padding: 0px 10px 0px 0px;
       #rutas-aprendizaje-link01 p{
         font-size: 30px;
       }
+      #rutas-aprendizaje-link05{
+        font-size: 30px;
+      }
       #rutas-aprendizaje-alg0-dev span{
         font-size: 25px;
+        text-align: center;
       }
       #rutas-aprendizaje-Comprehensive-Rust {
+        font-size: 25px;
+      }
+      #rutas-aprendizaje-Learn-X-in-Y-minutes{
+        font-size: 25px;
+      }
+      .ibm-SkillsBuild{
+        font-size: 25px;
+      }
+      .microsoft-learn{
         font-size: 25px;
       }
       .titulo-content-text-grande{
