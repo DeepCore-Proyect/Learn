@@ -10,7 +10,7 @@
 }
 #hero {
     margin: 20px auto;
-    padding: 40px;
+    padding: 100px 40px 0px 40px; 
     display: flex;
     align-items: center;
 
@@ -31,7 +31,7 @@
 .hero-content-text {
     text-align: left;
     color: rgb(0, 0, 0);
-    padding: 40px;
+    padding: 10px 40px 10px 40px;
     border-radius: 10px;
     background: rgba(255,255,255,0.75);
 }
@@ -355,6 +355,27 @@ padding: 0px 10px 0px 0px;
     margin-left: auto;
 
 }
+.contenedor-anuncio-borde {
+  position: relative;          /* Permite posicionar la palabra respecto a esta caja */
+  border: 2px solid #e0e0e0;   /* Color y grosor del borde */
+  border-radius: 6px;          /* Bordes ligeramente redondeados */
+  padding: 15px 10px 5px 10px; /* Espacio interno para que el anuncio no toque los bordes */
+  margin: 25px 0;              /* Margen exterior para separarlo de otros textos */
+}
+
+.etiqueta-borde {
+  position: absolute;
+  top: 0;                      /* Lo alinea exactamente en la línea superior */
+  left: 50%;                   /* Lo mueve al centro horizontal */
+  transform: translate(-50%, -50%); /* Centrado perfecto sobre la línea */
+  background-color: #ffffff;   /* IMPORTANTE: Pon aquí el mismo color de fondo de tu página web */
+  padding: 0 10px;             /* Espacio a los lados de la palabra para tapar la línea */
+  font-size: 11px;             /* Tamaño de la letra pequeño estilo etiqueta */
+  font-weight: bold;
+  color: #999999;              /* Color gris suave para la palabra */
+  letter-spacing: 1px;         /* Espaciado entre letras elegante */
+}
+
  /*///////////////////////////////////////////// Reset básico ////////////////////////////////////*/
     * {box-sizing: border-box; margin: 0; padding: 0}
     body {font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; line-height: 1.4}
@@ -433,7 +454,17 @@ padding: 0px 10px 0px 0px;
       .main-nav[aria-hidden="false"] {display: block}
       .main-nav ul {flex-direction: column; padding: 0.5rem 1rem}
       .nav-toggle {display: inline-block}
+    #hero{
+        max-width: 100%;
+        min-height: 250px;
+        padding: 0px 10px 0px 10px;
+        background-size: auto;
+    }       
+      .hero-content-text{
+        padding: 10px;
+        font-size: 16px;
 
+      }
       .grid {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -448,13 +479,13 @@ padding: 0px 10px 0px 0px;
         font-size: 28px;
       }
       #rutas-aprendizaje-link01 p{
-        font-size: 30px;
+        font-size: 33px;
       }
       #rutas-aprendizaje-link05{
         font-size: 30px;
       }
       #rutas-aprendizaje-alg0-dev span{
-        font-size: 25px;
+        font-size: 23px;
         text-align: center;
       }
       #rutas-aprendizaje-Comprehensive-Rust {
@@ -475,6 +506,16 @@ padding: 0px 10px 0px 0px;
       .titulo-content-text-movil{
         display: block;
       }
-
+      .ads-content-banner{
+        margin: 15px auto !important;
+        width: 100%;
+      }
+      .ads-content-banner > .ads-content-banner{
+        display: flex;
+        justify-content: center;
+      }
+      .ads-content-banner iframe{
+        max-width: 100%;
+      }
 
     }
