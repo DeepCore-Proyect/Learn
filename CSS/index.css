@@ -78,6 +78,47 @@
     min-height: 150px;
     text-decoration: none;
 }
+#para_educadores {
+    display: flex;
+    flex-direction: column; /* Coloca el título arriba, el texto en medio y el banner abajo */
+    align-items: center;    /* Centra todos los elementos horizontalmente */
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;      /* Evita que se estire demasiado en pantallas gigantes */
+    margin: 40px auto;      /* Separa esta sección de los bloques de arriba y abajo */
+    padding: 0 20px;        /* Evita que el contenido pegue a los bordes de la pantalla */
+    box-sizing: border-box;
+}
+.descripcion-educadores {
+    text-align: center;
+    max-width: 600px;       /* Limita el ancho del texto para que sea más cómodo de leer */
+    margin-bottom: 25px;    /* Espacio antes de mostrar el banner */
+    font-size: 1.1rem;
+}
+#rutas-aprendizaje-link00-for-education {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 550px;       /* Tamaño ideal para que el banner luzca idéntico al de la imagen */
+    background: #ffffff;
+    border: 3px solid #270499;
+    border-radius: 12px;
+    overflow: hidden;       /* Recorta la imagen para que respete los bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* Sombra elegante */
+    transition: transform 0.2s ease; /* Suaviza la animación hover */
+}
+
+/* Efecto al pasar el mouse por encima del banner */
+#rutas-aprendizaje-link00-for-education:hover {
+    transform: translateY(-3px); /* Levanta sutilmente la tarjeta */
+}
+
+#rutas-aprendizaje-link00-for-education img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 #rutas-aprendizaje-link01 p {
     margin: 0 50px 0 30px;
     padding: 20px;
@@ -477,6 +518,9 @@ padding: 0px 10px 0px 0px;
         overflow: hidden;
         overflow-wrap: anywhere;
         font-size: 28px;
+      }
+      #rutas-aprendizaje-link00-for-education {
+        max-width: 90%; /* En móviles el banner usará casi todo el ancho disponible */
       }
       #rutas-aprendizaje-link01 p{
         font-size: 33px;

@@ -60,19 +60,34 @@ main {
   gap: 1rem;
   margin-top: 1.5rem;
 }
+.clases-grid-carts {
+    margin-top: 20px;
+    margin-left: 45px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;;
+    justify-content: center;
 
-.categoria {
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  background: #f9fbff;
-  padding: 1rem;
+    border: 3px solid #270499;
+    border-radius: 10px;
+
+    width: 390px;
+    min-height: 150px;
+    text-decoration: none;
+}
+.clases-grid-carts:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.446); 
+}
+#enlace-rutas-planes img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;  
+    object-fit: cover;
 }
 
-.categorias p {
-  font-size: 1.5rem;
-  text-align: center;
-  color: #555;
-}
+
+
 footer {
   text-align: center;
   padding: 1.5rem 1rem 2rem;
